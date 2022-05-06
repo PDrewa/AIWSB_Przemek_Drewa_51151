@@ -1,0 +1,36 @@
+Zad.2 Tekst z konsoli:
+
+Parameters of the best solution : [0. 1. 1. 0. 1. 0. 1. 1. 0. 1. 0.]
+Item names of the best solution :
+obraz-pejzaz, obraz-portret, laptop, srebrne-sztucce, porcelana, skorzana-torebka,
+Fitness value of the best solution = 1630.0
+Predicted output based on the best solution : 1630.0
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Zad.3 Tekst z konsoli:
+
+Average elapsed time of the algorithm :  0.008699893951416016
+Parameters of the best solution : [0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 1. 1. 1. 0. 0.]
+Fitness value of the best solution = -0.0
+Predicted output based on the best solution : 252.0
+Number of generations passed is 10
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+Zad.4 Tekst z konsoli:
+
+Results for 25 elements:
+Parameters of the best solution : [0. 0. 1. 0. 0. 0. 1. 1. 1. 0. 1. 0. 0. 1. 0. 0. 1. 0. 0. 1. 0. 1. 0. 1.
+ 1.]
+Fitness value of the best solution = -0.0
+-----------------------------------
+Results for 35 elements:
+Parameters of the best solution : [1. 0. 1. 1. 0. 1. 0. 0. 1. 0. 0. 1. 1. 1. 1. 0. 0. 0. 1. 1. 1. 0. 0. 0.
+ 1. 1. 1. 0. 0. 1. 0. 0. 1. 1. 0.]
+Fitness value of the best solution = -0.0
+-----------------------------------
+Results for 45 elements:
+Parameters of the best solution : [0. 1. 1. 1. 0. 0. 1. 0. 0. 1. 1. 0. 1. 0. 1. 0. 0. 0. 0. 1. 0. 1. 1. 1.
+ 0. 1. 1. 1. 1. 0. 1. 0. 0. 1. 0. 1. 0. 1. 1. 0. 1. 0. 1. 0. 0.]
+Fitness value of the best solution = -0.0
+-----------------------------------
+Pomierzone srednie czasy dzialania programu: [0.01619699001312256, 0.02180004119873047, 0.04060006141662598]
