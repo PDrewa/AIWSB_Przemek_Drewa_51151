@@ -1,0 +1,44 @@
+from sklearn.datasets import load_iris
+from sklearn.preprocessing import StandardScaler
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score
+
+
+iris = load_iris()
+# splitting into train and test datasets
+
+from sklearn.model_selection import train_test_split
+datasets = train_test_split(iris.data, iris.target, test_size=0.3)
+
+train_data, test_data, train_labels, test_labels = datasets
+
+scaler = StandardScaler()
+
+# we fit the train data
+scaler.fit(train_data)
+
+# scaling the train data - niepotrzebne
+train_data = scaler.transform(train_data)
+test_data = scaler.transform(test_data)
+
+# Training the Model
+
+# creating an classifier from the model:
+
+# jedna ukryta warstwa i dwa neurony. Bardzo losowe wyniki. Zazwyczaj okolo 60%
+#mlp = MLPClassifier(hidden_layer_sizes=(2, 1), max_iter=800)
+
+# jedna ukryta warstwa i trzy neurony. Slabe wyniki. Zazwyczaj okolo 30%
+#mlp = MLPClassifier(hidden_layer_sizes=(3, 1), max_iter=800)
+
+# dwie warstwy ukryte, po trzy neurony. Najlepsze wyniki. Zazwyczaj okolo 90%
+mlp = MLPClassifier(hidden_layer_sizes=(3, 2), max_iter=800)
+
+# let's fit the training data to our model
+mlp.fit(train_data, train_labels)
+
+# evaulate
+predictions_train = mlp.predict(train_data)
+print(accuracy_score(predictions_train, train_labels))
+predictions_test = mlp.predict(test_data)
+print(accuracy_score(predictions_test, test_labels))
