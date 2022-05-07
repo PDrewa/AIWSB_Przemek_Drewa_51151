@@ -25,14 +25,14 @@ test_data = scaler.transform(test_data)
 
 # creating an classifier from the model:
 
-# jedna ukryta warstwa i dwa neurony. Bardzo losowe wyniki. Zazwyczaj okolo 60%
-#mlp = MLPClassifier(hidden_layer_sizes=(2, 1), max_iter=800)
+# jedna ukryta warstwa i dwa neurony. Zazwyczaj okolo 70%
+#mlp = MLPClassifier(hidden_layer_sizes=(2, ), max_iter=1000)
 
-# jedna ukryta warstwa i trzy neurony. Slabe wyniki. Zazwyczaj okolo 30%
-#mlp = MLPClassifier(hidden_layer_sizes=(3, 1), max_iter=800)
+# jedna ukryta warstwa i trzy neurony. Zazwyczaj okolo 90%
+#mlp = MLPClassifier(hidden_layer_sizes=(3, ), max_iter=1000)
 
-# dwie warstwy ukryte, po trzy neurony. Najlepsze wyniki. Zazwyczaj okolo 90%
-mlp = MLPClassifier(hidden_layer_sizes=(3, 2), max_iter=800)
+# dwie warstwy ukryte, po trzy neurony. Zazwyczaj ponad 95% (nawet 99%)
+mlp = MLPClassifier(hidden_layer_sizes=(3, 3), max_iter=1000)
 
 # let's fit the training data to our model
 mlp.fit(train_data, train_labels)
@@ -40,5 +40,3 @@ mlp.fit(train_data, train_labels)
 # evaulate
 predictions_train = mlp.predict(train_data)
 print(accuracy_score(predictions_train, train_labels))
-predictions_test = mlp.predict(test_data)
-print(accuracy_score(predictions_test, test_labels))
