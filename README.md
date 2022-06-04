@@ -25,7 +25,6 @@
 
 
 ## Features
-List the ready features here:
 - Consists basics of programming with python
 - Learn how to visualize results of data sets
 - Shows how to use machine learning with iris data set to classify types of irises (flowers)
